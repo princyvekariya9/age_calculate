@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Afacad:ital,wght@0,400..700;1,400..700&family=Anton&family=Archivo+Black&family=Bree+Serif&family=Caveat+Brush&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comfortaa:wght@300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lateef:wght@200;300;400;500;600;700;800&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Multani&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oregano:ital@0;1&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sen:wght@400..800&family=Sevillana&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.conatiner{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+  45deg,
+  hsl(319deg 28% 16%) 1%,
+  hsl(318deg 26% 16%) 40%,
+  hsl(317deg 25% 17%) 48%,
+  hsl(316deg 24% 17%) 51%,
+  hsl(314deg 22% 18%) 51%,
+  hsl(313deg 21% 18%) 50%,
+  hsl(312deg 20% 19%) 50%,
+  hsl(310deg 19% 19%) 49%,
+  hsl(309deg 18% 20%) 49%,
+  hsl(307deg 17% 20%) 52%,
+  hsl(305deg 16% 21%) 60%,
+  hsl(304deg 16% 21%) 99%
+);
+    padding: 10px;
+}
+.calculator{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.calculator h1{
+    font-size: 40px;
+    color: white;
+}
+.calculator span{
+color: white;
+}
+.inputBox{
+    width: 500px;
+    /* height: 400px; */
+    margin-top: 40px;
+    padding: 30px;
+    border-radius:10px;
+    box-shadow: 0px 0px 18px -1px #ffffff25;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+
+.inputBox input{
+    padding: 15px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #FAF0E6;
+    box-shadow: 5px 5px 0 #A78295;   
+}
+.inputBox label{
+    display: block;
+    text-align: left;
+    margin-bottom: 10px;
+    color: white;
+}
+.line{
+    width: 90%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.395);
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.cal{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #A78295;
+    border: none;
+    outline: 0;
+    font-weight: 500;
+    color: #ffffff;
+    cursor: pointer;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+
+    &:hover{
+        box-shadow: 0 0 10px #EFE1D1;
+    }
+}
+.print{
+    text-align: left;
+}
+.print span{
+    display: inline-block;
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 900;
+    font-style: italic;
+    margin: 4px 0;
+}
+.print .num{
+    color: #A78295;
+    font-weight: 500;
+    /* font-family: "Anton", sans-serif ; */
+    font-family: "Archivo Black", sans-serif;
+    padding-right: 20px
+}
